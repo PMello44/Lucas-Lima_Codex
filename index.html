@@ -152,7 +152,7 @@
 
     .hero-content .sub {
       font-size: clamp(1rem, 1.6vw, 1.3rem);
-      color: #c7e6d8;
+      color: #0fe087;
       margin-bottom: 18px;
       max-width: 38ch;
       font-weight: 600;
@@ -199,7 +199,11 @@
     }
 
     .bg-34-wrap {
-      background: url('./assets/bg-3-4.webp') center top / cover no-repeat;
+      background-color: #04110d;
+      background-image: url('./assets/bg-3-4.webp');
+      background-repeat: no-repeat;
+      background-position: 50% 74%;
+      background-size: cover;
     }
 
     .bg-34-wrap .section-two,
@@ -606,7 +610,7 @@
     }
 
     .final-cta p {
-      font-size: 1.02rem;
+      font-size: 24px;
       max-width: 36ch;
       color: #eef7f2;
       margin-bottom: 24px;
@@ -833,6 +837,15 @@
       }
     }
 
+    /* Desktop + ultrawide: full-bleed background with character aligned to section 3 copy */
+    @media (min-width: 1200px) {
+      .bg-34-wrap {
+        background-position: 50% 78%;
+        background-size: cover;
+      }
+    }
+
+
     @media (max-width: 640px) {
       .section { padding: 56px 16px; }
       .hero { min-height: auto; padding-top: 56px; }
@@ -930,7 +943,7 @@
   <section class="section final-cta" id="cta-final">
     <div class="container">
       <div class="cta-box">
-        <h2>Você não precisa<br>de mais conteúdo,<br><span class="highlight">precisa de um<br>sistema que venda!</span></h2>
+        <h2>Você não precisa<br>de mais conteúdo,<br><span class="highlight">precisa de um</span><br><span class="highlight">sistema que venda!</span></h2>
         <p><strong>Estruture, valide e escale</strong> seu infoproduto<br>com um modelo direto, simples e previsível,<br><strong>sem depender de exposição ou lançamentos.</strong></p>
         <a class="btn" href="#">Quero estruturar meu produto agora</a>
       </div>
